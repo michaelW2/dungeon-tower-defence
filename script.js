@@ -317,7 +317,7 @@ function doTowers() {
         t.show()
         // tower shooting rates(depending on upgrades)
         if (t.upgradeCount == 0) {
-            if (frameCount + t.towerShootOffset % 100 == 0 && enemiesEmptied == false) {
+            if (frameCount + t.towerOffset % 100 == 0 && enemiesEmptied == false) {
                 initialArrowX = t.x
                 initialArrowY = t.y
 
@@ -326,7 +326,7 @@ function doTowers() {
 
         }
         if (t.upgradeCount == 1) {
-            if ((frameCount + t.towerShootOffet) % 80 == 0 && enemiesEmptied == false) {
+            if ((frameCount + t.towerOffset) % 80 == 0 && enemiesEmptied == false) {
                 initialArrowX = t.x
                 initialArrowY = t.y
 
@@ -335,7 +335,7 @@ function doTowers() {
 
         }
         if (t.upgradeCount == 2) {
-            if ((frameCount + t.towerShootOffset) % 60 == 0 && enemiesEmptied == false) {
+            if ((frameCount + t.towerOffset) % 60 == 0 && enemiesEmptied == false) {
                 initialArrowX = t.x
                 initialArrowY = t.y
 
@@ -344,7 +344,7 @@ function doTowers() {
 
         }
         if (t.upgradeCount == 3) {
-            if ((frameCount + t.towerShootOffset) % 40 == 0 && enemiesEmptied == false) {
+            if ((frameCount + t.towerOffset) % 40 == 0 && enemiesEmptied == false) {
                 initialArrowX = t.x
                 initialArrowY = t.y
 

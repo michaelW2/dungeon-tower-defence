@@ -93,7 +93,7 @@ function draw() {
         drawWaveText()
         drawCurrencyText()
         highlightSquare()
-        inRangeLine()
+        //inRangeLine()
         push()
         fill("grey")
         stroke("grey")
@@ -595,31 +595,31 @@ function drawUpgradeCounter() {
 
 
 
-function inRangeLine() {
-    if (towers.length != 0 && enemies.length != 0) {
-        for (let i = 0; i < towers.length; i++) {
-            push()
-            stroke("yellow")
-            strokeWeight(0.5)
+// function inRangeLine() {
+//     if (towers.length != 0 && enemies.length != 0) {
+//         for (let i = 0; i < towers.length; i++) {
+//             push()
+//             stroke("yellow")
+//             strokeWeight(0.5)
 
-            for (let j = 0; j < enemies.length; j++) {
+//             for (let j = 0; j < enemies.length; j++) {
 
-                distance = dist(towers[i].x, towers[i].y, enemies[j].x, enemies[j].y)
-                if (distance <= towers[i].range) {
-                    line(towers[i].x, towers[i].y, enemies[j].x, enemies[j].y)
-
-
-                }
-
-            }
+//                 distance = dist(towers[i].x, towers[i].y, enemies[j].x, enemies[j].y)
+//                 if (distance <= towers[i].range) {
+//                     line(towers[i].x, towers[i].y, enemies[j].x, enemies[j].y)
 
 
+//                 }
 
-            pop()
-        }
-    }
+//             }
 
-}
+
+
+//             pop()
+//         }
+//     }
+
+// }
 
 function doArrows() {
     for (a of arrows) {

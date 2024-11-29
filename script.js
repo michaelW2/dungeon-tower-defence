@@ -317,7 +317,7 @@ function doTowers() {
         t.show()
         // tower shooting rates(depending on upgrades)
         if (t.upgradeCount == 0) {
-            if (frameCount + t.towerOffset % 100 == 0 && enemiesEmptied == false) {
+            if ((frameCount + t.towerOffset) % 100 == 0 && enemiesEmptied == false) {
                 initialArrowX = t.x
                 initialArrowY = t.y
 

@@ -6,6 +6,7 @@ class Tower {
     constructor() {
         this.towerOffset = towerShootOffset
         towerShootOffset += 20
+        //
         this.x = squareSize * (gridX + 1) + squareSize / 2
         this.y = squareSize * (gridY + 1) + squareSize / 2
         this.range = windowWidth / 10

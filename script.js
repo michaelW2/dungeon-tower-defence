@@ -706,7 +706,7 @@ function enemiesOnScreen() {
 // draws the life counter in the top left of the grid
 function drawLifeCounter() {
     push()
-    textSize(30)
+    textSize(15)
     image(lifeCounter, squareSize * 19, 0, squareSize * 3, squareSize)
     text(lifeCount, squareSize * 21 + squareSize / 5, squareSize * 0.75)
     pop()
